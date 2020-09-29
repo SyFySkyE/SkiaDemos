@@ -7,6 +7,12 @@
                     Padding="10">
     <TableView Intent="Menu">
         <TableRoot>
+            <TableSection Title="Transforms boiiiii">
+                <TextCell Text="UglyAnalogClockPage"
+                          Detail="owo what's this?"
+                          Command ="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:Transforms.UglyAnalogClockPage}"/>
+            </TableSection>
             <TableSection Title="Drawing a Simple Circle">
                 <TextCell Text="Simple Circle"
                           Detail="Outline and fill a circle with SkiaSharp"
@@ -80,6 +86,8 @@
                           Command="{Binding NavigateCommand}"
                           CommandParameter="{x:Type local:Basics.BitmapDissolvePage}" />
             </TableSection>
+
+            
         </TableRoot>
     </TableView>
 </local:HomeBasePage>
